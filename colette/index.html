@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="../css/viewer.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i|Roboto+Mono:300,300i,400,500,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../js/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="../js/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="../js/viewer.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script>
+        $(function(){
+            var web = new Viewer(document.getElementById('co-viewer-web'), {
+                navbar: false,
+                title: false,
+                rotatable: false,
+                scalable: false,
+                toolbar: false,
+                zIndex: 10000
+            });
+            var pad = new Viewer(document.getElementById('co-viewer-pad'), {
+                navbar: false,
+                title: false,
+                rotatable: false,
+                scalable: false,
+                toolbar: false,
+                zIndex: 10000
+            });
+            var phone = new Viewer(document.getElementById('co-viewer-phone'), {
+                navbar: false,
+                title: false,
+                rotatable: false,
+                scalable: false,
+                toolbar: false,
+                zIndex: 10000
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="project" id="project-01">
+        <div class="project-view">
+            <div class="wrap">
+                <a href="../" class="goback_btn" title="回首頁">←</a>
+                <div class="useTool">
+                    <div class="tags">#jQuery,</div>
+                    <div class="tags">#RWD,</div>
+                    <div class="tags">#SCSS</div>
+                    <div class="tags">#PHP</div>
+                </div>
+                <h4>colette</h4>
+                <div class="visit_btn">
+                    <a href="https://drive.google.com/drive/folders/1pBYZeO8cdKsQyJzwI4b83nTSCjf_SO-C?usp=sharing">進入</a>
+                </div>
+                <div class="divider-line"></div>
+            </div>
+        </div>
+        <div class="project-page">
+            <div class="project project-web">
+                <span>網頁</span>
+                <div id="co-viewer-web" class="cursor">
+                    <img src="../img/colette-1.png" alt="">
+                </div>
+            </div>
+            <div class="project project-pad">
+                <span>平板</span>
+                <div id="co-viewer-pad" class="cursor">
+                    <img src="../img/colette-768.png" alt="">
+                </div>
+            </div>
+            <div class="project project-phone">
+                <span>手機</span>
+                <div id="co-viewer-phone" class="cursor">
+                    <img src="../img/colette-375.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

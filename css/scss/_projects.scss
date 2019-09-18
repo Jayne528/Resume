@@ -1,0 +1,109 @@
+body {
+    background: #0e0c16;
+}
+.project {
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 3rem;
+    .wrap {
+        width: calc(100% - (35px*2));
+        margin: 0 auto;
+    }
+    .goback_btn {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #5918df;
+        color: #fff;
+        text-align: center;
+        line-height: 30px;
+    }
+    .useTool {
+        padding-top: 2rem;
+    }
+    .tags {
+        color: #988e9f;
+        font-size: 2rem;
+        line-height: 150%;
+        letter-spacing: 1px;
+        display: inline-block;
+    }
+    h4 {
+        font-size: 3.4rem;
+        line-height: 150%;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding-top: 2rem;
+    }
+    .visit_btn {
+        border-radius: 50px;
+        background: linear-gradient(-45deg,#ffa63d,#ff3d77,#1593e3,#5918df);
+        background-size: 1100%;
+        display: inline-block;
+        margin-top: 2rem;
+        a {
+            display: block;
+            padding: 1.8rem 3.8rem;
+            font-size: 2rem;
+            color: hsla(0,0%,100%,.9);
+        }
+    }
+    .divider-line {
+        background: #fff;
+        height: 3px;
+        margin: 3rem 0;
+    }
+    .project-page {
+        display: flex;
+        flex-direction: column;
+        .project {
+            width: 90%;
+            padding-top: 0;
+        }
+        span {
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            line-height: 200%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .project {
+        .project-page {
+            flex-direction: row;
+            justify-content: space-between;
+            width: calc(100% - (35px*2));
+            margin: 0 auto;
+            .project {
+                &-web {
+                    width: 45%;
+                }
+                &-pad {
+                    width: 29%;
+                }
+                &-phone {
+                    width: 20%;
+                }
+            }
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .project {
+        .wrap {
+            max-width: 1400px;
+        }
+        .project-page {
+            max-width: 1400px;
+        }
+    }
+}
