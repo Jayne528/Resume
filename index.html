@@ -57,7 +57,6 @@
             var contact_top = $('#contact').offset().top;
             $(window).scroll(function () { 
                 var top = $(window).scrollTop();
-                console.log(top)
                 if(top<work_top-80) {
                     $('.menu li').eq(0).addClass('active').siblings().removeClass('active')
                 } else if(top<about_top-80) {
