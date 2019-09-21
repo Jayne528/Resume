@@ -21,25 +21,28 @@
     <script type="text/javascript" src="./js/main.js"></script>
     <script>
         $(function() {
-            
-            $('.showreel li').hover(function (e) {
-                    // over
-                    
-                    var top = $(this).offset().top + $(this).outerWidth()/2;
-                    var left = $(this).offset().left + $(this).outerHeight()/2;
-                    $(this).mousemove(function (e) { 
-                        // values: e.clientX, e.clientY, e.pageX, e.pageY
-                        var pageX = e.pageX;
-                        var pageY = e.pageY;
-                        var trueX = (top - pageY)/9;
-                        var trueY = (left - pageX)/9;
-                        $(this).css({'transform': 'perspective(700px) rotateX('+ -trueX+'deg) rotateY('+trueY+'deg) scale3d(1.05, 1.05, 1.05)'})
-                    });
-                }, function () {
-                    // out
-                    $(this).css({'transform': 'perspective(700px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)'})
-                }
-            );
+            var w = $(window).width();
+            if(w>767) {
+                $('.showreel li').hover(function (e) {
+                        // over
+                        
+                        var top = $(this).offset().top + $(this).outerWidth()/2;
+                        var left = $(this).offset().left + $(this).outerHeight()/2;
+                        $(this).mousemove(function (e) { 
+                            // values: e.clientX, e.clientY, e.pageX, e.pageY
+                            var pageX = e.pageX;
+                            var pageY = e.pageY;
+                            var trueX = (top - pageY)/9;
+                            var trueY = (left - pageX)/9;
+                            $(this).css({'transform': 'perspective(700px) rotateX('+ -trueX+'deg) rotateY('+trueY+'deg) scale3d(1.05, 1.05, 1.05)'})
+                        });
+                    }, function () {
+                        // out
+                        $(this).css({'transform': 'perspective(700px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)'})
+                    }
+                );
+            }
+
             //menu 滑動區塊
             $('a[href*="#"]').on('click', function(e) {
                 e.preventDefault()
