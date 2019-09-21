@@ -787,6 +787,7 @@ body {
 
 .project .project-page .project {
   width: 90%;
+  margin: 0 auto;
   padding-top: 0;
 }
 
@@ -811,6 +812,9 @@ body {
             justify-content: space-between;
     width: calc(100% - (35px*2));
     margin: 0 auto;
+  }
+  .project .project-page .project {
+    margin: 0;
   }
   .project .project-page .project-web {
     width: 45%;

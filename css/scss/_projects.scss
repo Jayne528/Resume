@@ -59,6 +59,7 @@ body {
         flex-direction: column;
         .project {
             width: 90%;
+            margin: 0 auto;
             padding-top: 0;
         }
         span {
@@ -80,6 +81,7 @@ body {
             width: calc(100% - (35px*2));
             margin: 0 auto;
             .project {
+                margin: 0;
                 &-web {
                     width: 45%;
                 }
